@@ -23,7 +23,8 @@
     "url": "https://github.com/n-riesco/ijavascript.git"
   },
   "bin": {
-    "ijs": "bin/ijavascript.js"
+    "ijs": "bin/ijavascript.js",
+    "ijs-kernel": "lib/kernel.js"
   },
   "dependencies": {
     "jp-kernel": "github:kurtharriger/jp-kernel#socketio"
