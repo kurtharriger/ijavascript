@@ -217,6 +217,9 @@ function parseCommandArgs(context) {
                 context.protocol.version.split(".", 1)[0]
             );
 
+        } else if (e.lastIndexOf("--ijs-server=", 0) === 0) {
+            context.args.kernel.push('--server=' + e.slice("--ijs-server=".length));
+
         } else if (e === "--ijs-show-undefined") {
             context.args.kernel.push("--show-undefined");
 
@@ -432,9 +435,13 @@ function installKernelAsync(context, callback) {
 function spawnFrontend(context) {
     var cmd = context.args.frontend[0];
     var args = context.args.frontend.slice(1);
-    var frontend = spawn(cmd, args, {
-        stdio: "inherit"
-    });
+    // TODO: not sure why but kernel
+    // no longer starts wehn stdio inherit
+    // is specified
+    // var frontend = spawn(cmd, args, {
+    //     stdio: "inherit"
+    // });
+    var frontend = spawn(cmd, args);
 
     // Relay SIGINT onto the frontend
     var signal = "SIGINT";
