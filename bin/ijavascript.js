@@ -217,6 +217,9 @@ function parseCommandArgs(context) {
                 context.protocol.version.split(".", 1)[0]
             );
 
+        } else if (e.lastIndexOf("--ijs-server=", 0) === 0) {
+            context.args.kernel.push('--server=' + e.slice("--ijs-server=".length));
+
         } else if (e === "--ijs-show-undefined") {
             context.args.kernel.push("--show-undefined");
 
