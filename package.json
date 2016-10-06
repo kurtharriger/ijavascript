@@ -1,6 +1,6 @@
 {
   "name": "@kurtharriger/ijavascript",
-  "version": "5.1.1-wdio-repl",
+  "version": "5.1.2-wdio-repl",
   "description": "IJavascript is a Javascript kernel for the Jupyter notebook",
   "keywords": [
     "javascript",
@@ -26,7 +26,7 @@
     "ijs": "bin/ijavascript.js"
   },
   "dependencies": {
-    "@kurtharriger/jp-kernel": "0.0.2-wdio-repl"
+    "@kurtharriger/jp-kernel": "0.1.0-wdio-repl"
   },
   "devDependencies": {
     "debug": "latest",
