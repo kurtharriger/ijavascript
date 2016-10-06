@@ -1,44 +1,44 @@
 {
-    "name": "ijavascript",
-    "version": "5.0.15",
-    "description": "IJavascript is a Javascript kernel for the Jupyter notebook",
-    "keywords": [
-        "javascript",
-        "kernel",
-        "ipython",
-        "jupyter"
-    ],
-    "homepage": "https://n-riesco.github.io/ijavascript",
-    "bugs": {
-        "url": "https://github.com/n-riesco/ijavascript/issues"
-    },
-    "license": "BSD-3-Clause",
-    "author": {
-        "author": "Nicolas Riesco",
-        "email": "enquiries@nicolasriesco.net",
-        "url": "http://www.nicolasriesco.net/"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/n-riesco/ijavascript.git"
-    },
-    "bin": {
-        "ijs": "bin/ijavascript.js"
-    },
-    "dependencies": {
-        "jp-kernel": "github:kurtharriger/jp-kernel#wdio-repl"
-    },
-    "devDependencies": {
-        "debug": "latest",
-        "jsdoc": "latest",
-        "jshint": "latest"
-    },
-    "scripts": {
-        "doc": "python scripts/doc-build.py",
-        "doc:publish": "node scripts/doc-publish.js gh-pages https://github.com/n-riesco/ijavascript",
-        "lint": "jshint bin lib",
-        "test": "npm run lint && npm run test:4 && npm run test:5",
-        "test:4": "node test/index.js --protocol=4.1",
-        "test:5": "node test/index.js --protocol=5.0"
-    }
+  "name": "@kurtharriger/ijavascript",
+  "version": "5.1.0-wdio-repl",
+  "description": "IJavascript is a Javascript kernel for the Jupyter notebook",
+  "keywords": [
+    "javascript",
+    "kernel",
+    "ipython",
+    "jupyter"
+  ],
+  "homepage": "https://n-riesco.github.io/ijavascript",
+  "bugs": {
+    "url": "https://github.com/n-riesco/ijavascript/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": {
+    "author": "Nicolas Riesco",
+    "email": "enquiries@nicolasriesco.net",
+    "url": "http://www.nicolasriesco.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n-riesco/ijavascript.git"
+  },
+  "bin": {
+    "ijs": "bin/ijavascript.js"
+  },
+  "dependencies": {
+    "@kurtharriger/jp-kernel": "0.0.2-wdio-repl"
+  },
+  "devDependencies": {
+    "debug": "latest",
+    "jsdoc": "latest",
+    "jshint": "latest"
+  },
+  "scripts": {
+    "doc": "python scripts/doc-build.py",
+    "doc:publish": "node scripts/doc-publish.js gh-pages https://github.com/n-riesco/ijavascript",
+    "lint": "jshint bin lib",
+    "test": "npm run lint && npm run test:4 && npm run test:5",
+    "test:4": "node test/index.js --protocol=4.1",
+    "test:5": "node test/index.js --protocol=5.0"
+  }
 }
