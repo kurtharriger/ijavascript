@@ -61,6 +61,7 @@ var usage = [
     "    --ijs-install-kernel          same as --ijs-install=local",
     "                                  (for backwards-compatibility)",
     "    --ijs-protocol=version        set protocol version, e.g. 4.1",
+    "    --ijs-server=[server]         address of running kernel",
     "    --ijs-show-undefined          show undefined results",
     "    --ijs-startup-script=path     run script on startup",
     "                                  (path can be a file or a folder)",
