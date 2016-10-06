@@ -1,6 +1,6 @@
 {
   "name": "@kurtharriger/ijavascript",
-  "version": "5.1.0-wdio-repl",
+  "version": "5.1.1-wdio-repl",
   "description": "IJavascript is a Javascript kernel for the Jupyter notebook",
   "keywords": [
     "javascript",
